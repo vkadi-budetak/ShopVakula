@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Від Вакули</title>
+    <!-- Сonnection Java script -->
+    <script src="./js/script.js" defer></script>
+    <!-- Fav icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <!-- Styles css -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <div>
+            <div>
+                <a href="tel: (359)0123456789">(+380) 98 123 456 78</a>
+                <a href="https://t.me/vakula_ovochi">Замовити через Telegram</a>
+            </div>
+            <div>
+                <a href="">
+                    <img src="./img/logo/GreenOrangeModernIllustrativeFreshVegetableLogo.png" alt="Logo">
+                </a>
+
+                <nav>
+                    <ul>
+                        <li><a href="#hero">Магазин</a></li>
+                        <li><a href="#about">Новинки</a></li>
+                        <li><a href="#services">Про нас</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <a href="tel: (359)0123456789">Зворотній звязок</a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                    aria-label="facebook icon">
+                    <svg width="24" height="24">
+                        <use href="./img/icon/facebook-logo-icon.svg"></use>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                    aria-label="instagram icon">
+                    <svg width="24" height="24">
+                        <use href="./img/icon/instagram-logo-icon.svg"></use>
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="youtube icon">
+                    <svg width="24" height="24">
+                        <use href="./img/icon/youtube-logo-icon.svg"></use>
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Search section -->
+        <section id="hero">
+            <form action="/search" method="GET" class="search-form">
+                <label for="search_input" class="visually-hidden">Пошук товарів</label>
+
+                <input type="search" id="search_input" name="q" placeholder="Пошук товарів..." required />
+
+                <button type="submit" aria-label="Знайти">
+                    <svg width="24" height="24" aria-hidden="true">
+                        <use href="./img/icon/search.svg#search-icon"></use>
+                    </svg>
+                </button>
+            </form>
+        </section>
+
+        <!-- Groups section -->
+        <section id="about">
+            <div>
+                <div>
+                    <p>Фільтри</p>
+                    <ul class="filter-list">
+                        <li class="has-dropdown">
+                            <div class="dropdown-header">
+                                <a href="/garden">Категорія</a>
+                                <button type="button" class="arrow-btn" aria-label="Відкрити підменю">
+                                    <svg width="12" height="12" viewBox="0 0 10 6">
+                                        <path d="M1 1l4 4 4-4" stroke="currentColor" fill="none" stroke-width="2" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <ul class="submenu">
+                                <li class="has-dropdown">
+                                    <div class="dropdown-header">
+                                        <a href="/garden">З домашнього огороду</a>
+                                        <button type="button" class="arrow-btn" aria-label="Відкрити підменю">
+                                            <svg width="12" height="12" viewBox="0 0 10 6">
+                                                <path d="M1 1l4 4 4-4" stroke="currentColor" fill="none"
+                                                    stroke-width="2" />
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <ul class="submenu">
+                                        <li><a href="">Картопля</a></li>
+                                        <li><a href="">Огірки</a></li>
+                                        <li><a href="">Капуста</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown">
+                                    <div class="dropdown-header">
+                                        <a href="/garden">Соління</a>
+                                        <button type="button" class="arrow-btn" aria-label="Відкрити підменю">
+                                            <svg width="12" height="12" viewBox="0 0 10 6">
+                                                <path d="M1 1l4 4 4-4" stroke="currentColor" fill="none"
+                                                    stroke-width="2" />
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <ul class="submenu">
+                                        <li><a href="">Малосолена капуста</a></li>
+                                        <li><a href="">Малосолені огірки</a></li>
+                                        <li><a href="">Малосолені помідори</a></li>
+                                        <li><a href="">Кислі помідори</a></li>
+                                        <li><a href="">Кислі огірки</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-dropdown">
+                                    <div class="dropdown-header">
+                                        <a href="/garden">Домашні яйця</a>
+                                        <button type="button" class="arrow-btn" aria-label="Відкрити підменю">
+                                            <svg width="12" height="12" viewBox="0 0 10 6">
+                                                <path d="M1 1l4 4 4-4" stroke="currentColor" fill="none"
+                                                    stroke-width="2" />
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <ul class="submenu">
+                                        <li><a href="">Курині S - розмір</a></li>
+                                        <li><a href="">Курині L - розмір</a></li>
+                                        <li><a href="">Качині XL - розмір</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div>
+                    <ul>
+                        <li>
+                            <img src="" alt="">
+                            <p>
+                            <p><button type="submit">submit</button></p>
+                            </p>
+                            </img>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer section -->
+    <footer></footer>
+</body>
+
+</html>

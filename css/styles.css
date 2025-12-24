@@ -1,0 +1,91 @@
+
+
+
+
+/**
+  |============================
+  | <!-- Search section -->
+  |============================
+*/
+
+.search-form {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 8px;
+    max-width: 400px;
+}
+
+.search-form input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    flex-grow: 1;
+}
+
+.search-form button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* Клас для приховання тексту, залишаючи його для роботів */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/**
+  |============================
+  | Groups section
+  |============================
+*/
+/* Ховаємо всі вкладені списки */
+.submenu {
+    display: none;
+    list-style: none;
+    padding-left: 15px; /* Відступ для ієрархії */
+    margin: 5px 0;
+}
+
+/* Показуємо тільки той список, чий батько має клас .is-open */
+.has-dropdown.is-open > .submenu {
+    display: block;
+}
+
+/* Стилі для кнопок */
+.arrow-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+/* Повертаємо стрілочку тільки у відкритого елемента */
+.has-dropdown.is-open > .dropdown-header .arrow-btn {
+    transform: rotate(180deg);
+}
+
+.dropdown-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.dropdown-header a {
+    text-decoration: none;
+    color: inherit;
+}
