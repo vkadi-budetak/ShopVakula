@@ -1,4 +1,157 @@
+:root {
 
+    /* Text colors */
+    --main-text-color: black;
+    --main-text-header-color: white;
+
+    /* Bg colors */
+    --secondary-bg-cl: #ae002c;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 17px;
+    color: var(--main-text-color);
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
+
+/* Reset Star */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.link {
+    color: currentColor;
+    text-decoration: none
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    font-family: inherit;
+    color: currentColor;
+    cursor: pointer;
+}
+
+li:last-child_ {
+    margin-bottom: 0;
+}
+
+/**
+  |============================
+  | Header section
+  |============================
+*/
+.header-box-connection {
+    background-image: url(/img/bg-image/header_phone.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: var(--main-text-header-color);
+    padding: 60px 0 60px;
+}
+
+.header-box-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    width: 200px;
+}
+
+.header-tel {}
+
+.header-social-box {
+    fill: white;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.header-telegram {}
+
+.header-box-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo {}
+
+.header-img {
+    background-color: white;
+    border-radius: 50%;
+}
+
+.header-box-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    width: 200px;
+}
+
+.header-fb {}
+
+.header-fb-svg {}
+
+.header-instagram {}
+
+.header-instagram-svg {}
+
+.header-youtube {}
+
+.header-youtube-svg {}
+
+.header-box-nav {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 26px;
+}
+
+.heder-nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+
+}
+
+.list {}
+
+.header-nav-item {}
+
+.header-nav-link {}
 
 
 
@@ -7,21 +160,28 @@
   | <!-- Search section -->
   |============================
 */
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    width: 100%;
+}
 
 .search-form {
+    background: #ffffff;
+    border: 2px solid var(--secondary-bg-cl);
+    border-radius: 20px;
+    padding: 5px 15px;
     display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 4px 8px;
-    max-width: 400px;
 }
 
 .search-form input {
     border: none;
     outline: none;
-    padding: 8px;
+    padding: 10px;
     flex-grow: 1;
+    font-size: 14px;
 }
 
 .search-form button {
@@ -30,9 +190,13 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+    transition: transform 0.2s;
 }
 
-/* Клас для приховання тексту, залишаючи його для роботів */
+.search-form button:hover {
+    transform: scale(1.1);
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -44,6 +208,8 @@
     border: 0;
 }
 
+
+
 /**
   |============================
   | Groups section
@@ -53,12 +219,13 @@
 .submenu {
     display: none;
     list-style: none;
-    padding-left: 15px; /* Відступ для ієрархії */
+    padding-left: 15px;
+    /* Відступ для ієрархії */
     margin: 5px 0;
 }
 
 /* Показуємо тільки той список, чий батько має клас .is-open */
-.has-dropdown.is-open > .submenu {
+.has-dropdown.is-open>.submenu {
     display: block;
 }
 
@@ -74,7 +241,7 @@
 }
 
 /* Повертаємо стрілочку тільки у відкритого елемента */
-.has-dropdown.is-open > .dropdown-header .arrow-btn {
+.has-dropdown.is-open>.dropdown-header .arrow-btn {
     transform: rotate(180deg);
 }
 
@@ -88,4 +255,180 @@
 .dropdown-header a {
     text-decoration: none;
     color: inherit;
+}
+
+/**
+  |============================
+  | Groups section
+  |============================
+*/
+/* 
+3 - це 3 елемента в рядку
+2 - cума всіх внутрішніх відступів, відступів завжди менше на 1 чим елементів
+3 - к-сть елементів які нам потрібні в рядку
+
+Контейнер {
+Display: flex;
+Flex-wrap: wrap;
+Gap: 50px 30px}
+Елемент {
+Width: calc((100% - 30px * 2)/3)} */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Автоматична сітка */
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.product-item {
+    border: 1px solid #eee;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+}
+
+.product-item:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Ефект при наведенні */
+}
+
+.product-img {
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* Контейнер, який ділить секцію на дві частини */
+.groups-wrapper {
+    display: flex;
+    align-items: flex-start; /* Щоб панель не розтягувалася по висоті товарів */
+    gap: 30px; /* Відстань між фільтрами та товарами */
+    padding: 20px 0;
+}
+
+/* Бокова панель (Сайдбар) */
+.filters {
+    flex: 0 0 250px; /* Ширина панелі фіксована — 250px */
+    position: sticky; /* Панель буде "залипати" при скролі (опціонально) */
+    top: 20px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Основна частина з товарами */
+.product-gallery {
+    flex-grow: 1; /* Займає весь залишок простору справа */
+}
+
+/* Стилі для списку товарів (сітка) */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+
+.groups-title {
+}
+.groups-wrapper {
+}
+.filters {
+}
+.filters-title {
+    font-size: 22px;
+}
+.filter-list {
+}
+.has-dropdown {
+}
+.dropdown-header {
+}
+.filter-link {
+}
+.arrow-btn {
+}
+.submenu {
+}
+.filter-sublink {
+}
+.product-gallery {
+}
+.product-list {
+}
+.product-item {
+}
+.product-img {
+}
+.product-name {
+}
+.product-price {
+}
+.currency {
+}
+.unit {
+}
+.buy-btn {
+}
+.load-more-btn {
+}
+
+
+
+
+
+
+/**
+  |============================
+  | Footer section
+  |============================
+*/
+.footer-signature {
+    /* Скидаємо стандартні відступи абзацу, щоб вони не псували футер */
+    margin: 0;
+    padding: 10px 0;
+
+    font-family: inherit;
+    /* Використовує шрифт вашого сайту */
+    line-height: 1.2;
+    text-align: center;
+    cursor: default;
+}
+
+.footer-signature small {
+    display: block;
+    /* Переносить DESIGN на новий рядок */
+    font-size: 0.6em;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.6);
+    /* Робимо трохи м'якшим за кольором */
+    transition: all 0.5s ease-in-out;
+    margin-top: 4px;
+}
+
+/* Ефект розсування літер при наведенні на весь абзац */
+.footer-signature:hover small {
+    letter-spacing: 0.8em;
+    color: rgba(0, 0, 0, 1);
+}
+
+/**
+  |============================
+  | Footer section
+  |============================
+*/
+.footer-box {
+    background-image: url(/img/bg-image/footer_phone.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
 }

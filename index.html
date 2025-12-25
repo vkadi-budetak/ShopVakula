@@ -16,67 +16,78 @@
 <body>
     <!-- Header section -->
     <header>
-        <div>
-            <div>
-                <a href="tel: (359)0123456789">(+380) 98 123 456 78</a>
-                <a href="https://t.me/vakula_ovochi">Замовити через Telegram</a>
+        <div class="header-box-connection">
+            <div class="header-box-address">
+                <a class="header-tel link" href="tel:(359)0123456789">(+380) 98 123 456 78</a>
+                <a class="header-telegram link" href="https://t.me/vakula_ovochi">Замовити через Telegram</a>
             </div>
-            <div>
-                <a href="">
-                    <img src="./img/logo/GreenOrangeModernIllustrativeFreshVegetableLogo.png" alt="Logo">
+            <div class="header-box-logo">
+                <a class="header-logo link" href="">
+                    <img class="header-img" src="./img/logo/vid_vakuly_logo_transparent.png" alt="Logo" width="120"
+                        height="120">
                 </a>
 
-                <nav>
-                    <ul>
-                        <li><a href="#hero">Магазин</a></li>
-                        <li><a href="#about">Новинки</a></li>
-                        <li><a href="#services">Про нас</a></li>
-                    </ul>
-                </nav>
+                <div class="header-box-nav">
+                    <nav>
+                        <ul class="heder-nav-list list">
+                            <li class="header-nav-item"><a class="header-nav-link link" href="#hero">Магазин</a></li>
+                            <li class="header-nav-item"><a class="header-nav-link link" href="#about">Новинки</a></li>
+                            <li class="header-nav-item"><a class="header-nav-link link" href="#services">Про нас</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div>
-                <a href="tel: (359)0123456789">Зворотній звязок</a>
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
-                    aria-label="facebook icon">
-                    <svg width="24" height="24">
-                        <use href="./img/icon/facebook-logo-icon.svg"></use>
-                    </svg>
-                </a>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
-                    aria-label="instagram icon">
-                    <svg width="24" height="24">
-                        <use href="./img/icon/instagram-logo-icon.svg"></use>
-                    </svg>
-                </a>
-                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="youtube icon">
-                    <svg width="24" height="24">
-                        <use href="./img/icon/youtube-logo-icon.svg"></use>
-                    </svg>
-                </a>
+            <div class="header-box-social">
+                <a class="header-tel link" href="tel:(359)0123456789">Зворотній звязок</a>
+                <div class="header-social-box">
+                    <a class="header-fb link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                        aria-label="facebook icon">
+                        <svg class="header-fb-svg" width="24" height="24">
+                            <use href="./img/icon/facebook-logo-icon.svg"></use>
+                        </svg>
+                    </a>
+                    <a class="header-instagram link" href="https://www.instagram.com/" target="_blank"
+                        rel="noopener noreferrer" aria-label="instagram icon">
+                        <svg class="header-instagram-svg" width="24" height="24">
+                            <use href="./img/icon/instagram-logo-icon.svg"></use>
+                        </svg>
+                    </a>
+                    <a class="header-youtube link" href="https://www.youtube.com/" target="_blank"
+                        rel="noopener noreferrer" aria-label="youtube icon">
+                        <svg class="header-youtube-svg" width="24" height="24">
+                            <use href="./img/icon/youtube-logo-icon.svg"></use>
+                        </svg>
+                    </a>
+                </div>
+
 
             </div>
         </div>
+
     </header>
 
     <main>
         <!-- Search section -->
-        <section id="hero">
-            <form action="/search" method="GET" class="search-form">
-                <label for="search_input" class="visually-hidden">Пошук товарів</label>
-
-                <input type="search" id="search_input" name="q" placeholder="Пошук товарів..." required />
-
-                <button type="submit" aria-label="Знайти">
-                    <svg width="24" height="24" aria-hidden="true">
-                        <use href="./img/icon/search.svg#search-icon"></use>
-                    </svg>
-                </button>
-            </form>
+        <section>
+            <div class="search-box">
+                <h2 hidden>Пошук товарів</h2>
+                <form class="search-form" action="/search" method="GET">
+                    <label class="visually-hidden" for="search_input">Пошук товарів</label>
+                    <input type="search" id="search_input" name="q" placeholder="Пошук товарів..." required />
+                    <button type="submit" aria-label="Знайти">
+                        <svg width="24" height="24" aria-hidden="true">
+                            <use href="./img/icon/search.svg#search-icon"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </section>
 
         <!-- Groups section -->
-        <section id="about">
+        <!-- <section>
             <div>
+                <h2 hidden>Каталог товарів</h2>
                 <div>
                     <p>Фільтри</p>
                     <ul class="filter-list">
@@ -154,19 +165,260 @@
                 <div>
                     <ul>
                         <li>
-                            <img src="" alt="">
-                            <p>
-                            <p><button type="submit">submit</button></p>
-                            </p>
-                            </img>
+                            <img src="./img/groups/Солоні_огірки.jpg" alt="Солені огірки" width="169" height="169">
+                            <p>Солоні огірки</p>
+                            <p>250<span>грн</span><span>/кг</span></p>
+                            <button type="submit">В кошик</button>
+                        </li>
+                        <li>
+                            <img src="./img/groups/солоні_помідори.png" alt="Солені помідори" width="169" height="169">
+                            <p>Солоні помідори</p>
+                            <p>350<span>грн</span><span>/кг</span></p>
+                            <button type="submit">В кошик</button>
+                        </li>
+                        <li>
+                            <img src="./img/groups/Капуста.jpg" alt="Капуста" width="169" height="169">
+                            <p>Солоні огірки</p>
+                            <p>190<span>грн</span><span>/кг</span></p>
+                            <button type="submit">В кошик</button>
+                        </li>
+                        <li>
+                            <img src="./img/groups/картопля.jpg" alt="Картопля" width="169" height="169">
+                            <p>Картопля</p>
+                            <p>150<span>грн</span><span>/кг</span></p>
+                            <button type="submit">В кошик</button>
+                        </li>
+                        <li>
+                            <img src="./img/groups/Солоні_огірки.jpg" alt="Солені огірки" width="169" height="169">
+                            <p>Солоні огірки</p>
+                            <p>250<span>грн</span><span>/кг</span></p>
+                            <button type="submit">В кошик</button>
+                        </li>
+                        <li>
+                            <img src="./img/groups/солоні_помідори.png" alt="Солені помідори" width="169" height="169">
+                            <p>Солоні помідори</p>
+                            <p>350<span>грн</span><span>/кг</span></p>
+                            <button type="submit">В кошик</button>
+                        </li>
+                        <li>
+                            <img src="./img/groups/Капуста.jpg" alt="Капуста" width="169" height="169">
+                            <p>Солоні огірки</p>
+                            <p>190<span>грн</span><span>/кг</span></p>
+                            <button type="submit">В кошик</button>
+                        </li>
+                        <li>
+                            <img src="./img/groups/картопля.jpg" alt="Картопля" width="169" height="169">
+                            <p>Картопля</p>
+                            <p>150<span>грн</span><span>/кг</span></p>
+                            <button type="submit">В кошик</button>
+                        </li>
+                        <li>
+                            <img src="./img/groups/Капуста.jpg" alt="Капуста" width="169" height="169">
+                            <p>Солоні огірки</p>
+                            <p>190<span>грн</span><span>/кг</span></p>
+                            <button type="submit">В кошик</button>
                         </li>
                     </ul>
+
+                </div>
+                <button type="button">Більше товарів</button>
+            </div>
+        </section> -->
+
+        <section class="groups">
+            <div class="container">
+                <h2 class="groups-title" hidden>Каталог товарів</h2>
+
+                <div class="groups-wrapper">
+                    <aside class="filters">
+                        <p class="filters-title">Фільтри</p>
+                        <ul class="filter-list list">
+                            <li class="has-dropdown">
+                                <div class="dropdown-header">
+                                    <a href="/garden" class="filter-link">Категорія</a>
+                                    <button type="button" class="arrow-btn" aria-label="Відкрити підменю">
+                                        <svg width="12" height="12" viewBox="0 0 10 6">
+                                            <path d="M1 1l4 4 4-4" stroke="currentColor" fill="none" stroke-width="2" />
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <ul class="submenu">
+                                    <li class="has-dropdown">
+                                        <div class="dropdown-header">
+                                            <a href="/garden" class="filter-link">З домашнього огороду</a>
+                                            <button type="button" class="arrow-btn" aria-label="Відкрити підменю">
+                                                <svg width="12" height="12" viewBox="0 0 10 6">
+                                                    <path d="M1 1l4 4 4-4" stroke="currentColor" fill="none"
+                                                        stroke-width="2" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <ul class="submenu">
+                                            <li><a href="" class="filter-sublink link">Картопля</a></li>
+                                            <li><a href="" class="filter-sublink link">Огірки</a></li>
+                                            <li><a href="" class="filter-sublink link">Капуста</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="has-dropdown">
+                                    <div class="dropdown-header">
+                                        <a href="/garden">Домашні яйця</a>
+                                        <button type="button" class="arrow-btn" aria-label="Відкрити підменю">
+                                            <svg width="12" height="12" viewBox="0 0 10 6">
+                                                <path d="M1 1l4 4 4-4" stroke="currentColor" fill="none"
+                                                    stroke-width="2" />
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <ul class="submenu">
+                                        <li><a class="link" href="">Курині S - розмір</a></li>
+                                        <li><a class="link" href="">Курині L - розмір</a></li>
+                                        <li><a class="link" href="">Качині XL - розмір</a></li>
+                                    </ul>
+                                </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </aside>
+
+                    <div class="product-gallery">
+                        <ul class="product-list">
+                            <li class="product-item">
+                                <img class="product-img" src="./img/groups/Солоні_огірки.jpg" alt="Солені огірки"
+                                    width="169" height="169">
+                                <h3 class="product-name">Солоні огірки</h3>
+                                <p class="product-price">250 <span class="currency">грн</span><span
+                                        class="unit">/кг</span></p>
+                                <button class="buy-btn" type="submit">В кошик</button>
+                            </li>
+
+                            <li class="product-item">
+                                <img class="product-img" src="./img/groups/солоні_помідори.png" alt="Солені помідори"
+                                    width="169" height="169">
+                                <h3 class="product-name">Солоні помідори</h3>
+                                <p class="product-price">350 <span class="currency">грн</span><span
+                                        class="unit">/кг</span></p>
+                                <button class="buy-btn" type="submit">В кошик</button>
+                            </li>
+
+                            <li class="product-item">
+                                <img class="product-img" src="./img/groups/Капуста.jpg" alt="Капуста" width="169"
+                                    height="169">
+                                <h3 class="product-name">Капуста</h3>
+                                <p class="product-price">190 <span class="currency">грн</span><span
+                                        class="unit">/кг</span></p>
+                                <button class="buy-btn" type="submit">В кошик</button>
+                            </li>
+                            <li class="product-item">
+                                <img class="product-img" src="./img/groups/картопля.jpg" alt="Картопля"
+                                    width="169" height="169">
+                                <h3 class="product-name">Картопля</h3>
+                                <p class="product-price">500 <span class="currency">грн</span><span
+                                        class="unit">/кг</span></p>
+                                <button class="buy-btn" type="submit">В кошик</button>
+                            </li>
+
+                            <li class="product-item">
+                                <img class="product-img" src="./img/groups/солоні_помідори.png" alt="Солені помідори"
+                                    width="169" height="169">
+                                <h3 class="product-name">Солоні помідори</h3>
+                                <p class="product-price">350 <span class="currency">грн</span><span
+                                        class="unit">/кг</span></p>
+                                <button class="buy-btn" type="submit">В кошик</button>
+                            </li>
+
+                            <li class="product-item">
+                                <img class="product-img" src="./img/groups/Капуста.jpg" alt="Капуста" width="169"
+                                    height="169">
+                                <h3 class="product-name">Капуста</h3>
+                                <p class="product-price">190 <span class="currency">грн</span><span
+                                        class="unit">/кг</span></p>
+                                <button class="buy-btn" type="submit">В кошик</button>
+                            </li>
+
+                            <li class="product-item">
+                                <img class="product-img" src="./img/groups/Капуста.jpg" alt="Капуста" width="169"
+                                    height="169">
+                                <h3 class="product-name">Капуста</h3>
+                                <p class="product-price">190 <span class="currency">грн</span><span
+                                        class="unit">/кг</span></p>
+                                <button class="buy-btn" type="submit">В кошик</button>
+                            </li>
+                        </ul>
+
+                        <button class="load-more-btn" type="button">Більше товарів</button>
+                    </div>
                 </div>
             </div>
         </section>
+
     </main>
+
     <!-- Footer section -->
-    <footer></footer>
+    <footer>
+        <div class="footer-box">
+            <div>
+                <div>
+                    <div>
+                        <br>
+                        <p>Ми на зв’язку<br>Щодня: 10:00 — 18:00</p>
+                    </div>
+                    <div>
+                        <p>Оплата і доставка</p>
+                    </div>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="./img/logo/GreenOrangeModernIllustrativeFreshVegetableLogo.png" alt="Logo">
+                    </a>
+                </div>
+                <div>
+                    <div>
+                        <p>Наші <br>Соціальні мережі</p>
+                    </div>
+                    <div>
+                        <a href="tel:(359)0123456789">Зворотній звязок</a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                            aria-label="facebook icon">
+                            <svg width="24" height="24">
+                                <use href="./img/icon/facebook-logo-icon.svg"></use>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                            aria-label="instagram icon">
+                            <svg width="24" height="24">
+                                <use href="./img/icon/instagram-logo-icon.svg"></use>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"
+                            aria-label="youtube icon">
+                            <svg width="24" height="24">
+                                <use href="./img/icon/youtube-logo-icon.svg"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="tel:(359)0123456789">(+380) 98 123 456 78</a>
+                <a href="https://t.me/vakula_ovochi">Замовити через Telegram</a>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a href="">Політика конфіденційності</a>
+                <a href="">Договір оферти</a>
+            </div>
+            <div>
+                <p>All rights Reserved</p>
+            </div>
+            <div>
+                <p class="footer-signature">MΛDE BY VLD KRΛVCHENKO<small>D E S I G N</small></p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
