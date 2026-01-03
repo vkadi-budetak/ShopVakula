@@ -399,6 +399,28 @@ Width: calc((100% - 30px * 2)/3)} */
     font-size: 22px;
 }
 
+.container-load-more-btn {
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.load-more-btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 550;
+    background-color: #fff;
+}
+
+.load-more-btn:hover,
+.load-more-btn:focus {
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s;
+}
+
 
 /**
   |============================
@@ -440,12 +462,37 @@ Width: calc((100% - 30px * 2)/3)} */
   | Footer section
   |============================
 */
-.footer-box {
+.footer-red {
     background-image: url(/img/bg-image/footer_phone.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    align-items: center;
+}
+
+.footer-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--main-text-header-color);
+    padding: 24px 0 58px;
+}
+
+.footer-time {
+    padding-bottom: 28px;
+}
+
+
+.footer-iteam {
+    padding-bottom: 28px;
+}
+
+.footer-detail-order {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.footer-black {
+    background-color: var(--main-text-color);
 }
