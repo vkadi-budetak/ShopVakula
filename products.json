@@ -1,0 +1,258 @@
+[
+  {
+    "id": 1,
+    "name": "Огірок домашній",
+    "price": 85,
+    "image": "./img/producst-img/1.jpg",
+    "category": "vegetables",
+    "unit": "кг"
+  },
+  {
+    "id": 2,
+    "name": "Помідор Черрі",
+    "price": 120,
+    "image": "./img/producst-img/2.jpg",
+    "category": "vegetables",
+    "unit": "кг"
+  },
+  {
+    "id": 3,
+    "name": "Помідор Рожевий",
+    "price": 95,
+    "image": "./img/producst-img/3.jpg",
+    "category": "vegetables",
+    "unit": "кг"
+  },
+  {
+    "id": 4,
+    "name": "Капуста молода",
+    "price": 45,
+    "image": "./img/producst-img/4.jpg",
+    "category": "vegetables",
+    "unit": "кг"
+  },
+  {
+    "id": 5,
+    "name": "Картопля відбірна",
+    "price": 25,
+    "image": "./img/producst-img/5.jpg",
+    "category": "vegetables",
+    "unit": "кг"
+  },
+  {
+    "id": 6,
+    "name": "Морква солодка",
+    "price": 30,
+    "image": "./img/producst-img/6.jpg",
+    "category": "vegetables",
+    "unit": "кг"
+  },
+  {
+    "id": 7,
+    "name": "Буряк столовий",
+    "price": 28,
+    "image": "./img/producst-img/7.jpg",
+    "category": "vegetables",
+    "unit": "кг"
+  },
+  {
+    "id": 8,
+    "name": "Цибуля ріпчаста",
+    "price": 22,
+    "image": "./img/producst-img/8.jpg",
+    "category": "vegetables",
+    "unit": "кг"
+  },
+  {
+    "id": 9,
+    "name": "Часник домашній",
+    "price": 150,
+    "image": "./img/producst-img/9.jpg",
+    "category": "vegetables",
+    "unit": "кг"
+  },
+  {
+    "id": 10,
+    "name": "Перець Болгарський",
+    "price": 110,
+    "image": "./img/producst-img/10.jpg",
+    "category": "vegetables",
+    "unit": "кг"
+  },
+  {
+    "id": 11,
+    "name": "Баклажан синій",
+    "price": 90,
+    "image": "./img/producst-img/11.jpg",
+    "category": "vegetables",
+    "unit": "кг"
+  },
+  {
+    "id": 12,
+    "name": "Кабачок світлий",
+    "price": 40,
+    "image": "./img/producst-img/12.jpg",
+    "category": "vegetables",
+    "unit": "кг"
+  },
+  {
+    "id": 13,
+    "name": "Редис тепличний",
+    "price": 65,
+    "image": "./img/producst-img/13.jpg",
+    "category": "vegetables",
+    "unit": "кг"
+  },
+  {
+    "id": 14,
+    "name": "Зелена цибуля (пучок)",
+    "price": 25,
+    "image": "./img/producst-img/14.jpg",
+    "category": "greens",
+    "unit": "шт"
+  },
+  {
+    "id": 15,
+    "name": "Кріп свіжий",
+    "price": 20,
+    "image": "./img/producst-img/15.jpg",
+    "category": "greens",
+    "unit": "шт"
+  },
+  {
+    "id": 16,
+    "name": "Петрушка",
+    "price": 20,
+    "image": "./img/producst-img/16.jpg",
+    "category": "greens",
+    "unit": "шт"
+  },
+  {
+    "id": 17,
+    "name": "Салат Латук",
+    "price": 45,
+    "image": "./img/producst-img/17.jpg",
+    "category": "greens",
+    "unit": "шт"
+  },
+  {
+    "id": 18,
+    "name": "Рукола",
+    "price": 55,
+    "image": "./img/producst-img/18.jpg",
+    "category": "greens",
+    "unit": "шт"
+  },
+  {
+    "id": 19,
+    "name": "Шпинат",
+    "price": 60,
+    "image": "./img/producst-img/19.jpg",
+    "category": "greens",
+    "unit": "шт"
+  },
+  {
+    "id": 20,
+    "name": "Базилік фіолетовий",
+    "price": 70,
+    "image": "./img/producst-img/20.jpg",
+    "category": "greens",
+    "unit": "шт"
+  },
+  {
+    "id": 21,
+    "name": "Полуниця теплична",
+    "price": 180,
+    "image": "./img/producst-img/21.jpg",
+    "category": "fruits",
+    "unit": "кг"
+  },
+  {
+    "id": 22,
+    "name": "Малина домашня",
+    "price": 250,
+    "image": "./img/producst-img/22.jpg",
+    "category": "fruits",
+    "unit": "кг"
+  },
+  {
+    "id": 23,
+    "name": "Яблуко Симиренко",
+    "price": 35,
+    "image": "./img/producst-img/23.jpg",
+    "category": "fruits",
+    "unit": "кг"
+  },
+  {
+    "id": 24,
+    "name": "Груша домашня",
+    "price": 75,
+    "image": "./img/producst-img/24.jpg",
+    "category": "fruits",
+    "unit": "кг"
+  },
+  {
+    "id": 25,
+    "name": "Броколі",
+    "price": 130,
+    "image": "./img/producst-img/25.jpg",
+    "category": "vegetables",
+    "unit": "кг"
+  },
+  {
+    "id": 26,
+    "name": "Цвітна капуста",
+    "price": 110,
+    "image": "./img/producst-img/26.jpg",
+    "category": "vegetables",
+    "unit": "кг"
+  },
+  {
+    "id": 27,
+    "name": "Селера (корінь)",
+    "price": 80,
+    "image": "./img/producst-img/27.jpg",
+    "category": "vegetables",
+    "unit": "кг"
+  },
+  {
+    "id": 28,
+    "name": "Гарбуз мускатний",
+    "price": 20,
+    "image": "./img/producst-img/28.jpg",
+    "category": "vegetables",
+    "unit": "кг"
+  },
+  {
+    "id": 29,
+    "name": "Кукурудза солодка",
+    "price": 15,
+    "image": "./img/producst-img/29.jpg",
+    "category": "vegetables",
+    "unit": "шт"
+  },
+  {
+    "id": 30,
+    "name": "Пекінська капуста",
+    "price": 55,
+    "image": "./img/producst-img/30.jpg",
+    "category": "vegetables",
+    "unit": "кг"
+  },
+  {
+    "id": 31,
+    "name": "Солоні огірки",
+    "price": 30,
+    "image": "./img/producst-img/31.jpg",
+    "category": "brine",
+    "unit": "кг"
+  },
+  {
+    "id": 32,
+    "name": "Солоні помідори",
+    "price": 35,
+    "image": "./img/producst-img/32.jpg",
+    "category": "brine",
+    "unit": "кг"
+  }
+]
