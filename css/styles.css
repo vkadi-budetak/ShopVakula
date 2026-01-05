@@ -145,6 +145,18 @@ header {
     width: 200px;
 }
 
+.header-cart {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    border-radius: 50%;
+    background-color: var(--secondary-bg-cl);
+    color: #fff;
+}
 
 .header-box-nav {
     margin-left: auto;
