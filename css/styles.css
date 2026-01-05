@@ -87,7 +87,7 @@ Outline-offset: -2px; */
   |============================
 */
 header {
-    background-image: url(/img/bg-image/header_phone.webp);
+    background-image: url(./img/bg-image/header_phone.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -445,7 +445,7 @@ header {
   |============================
 */
 .footer-red {
-    background-image: url(/img/bg-image/footer_phone.webp);
+    background-image: url(./img/bg-image/footer_phone.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
