@@ -22,8 +22,8 @@
         <header>
             <div class="header-box-connection container">
                 <div class="header-box-address">
-                    <a class="header-tel link" href="tel:(359)0123456789">(+380) 98 123 456 78</a>
-                    <a class="header-telegram link" href="https://t.me/vakula_ovochi">Замовити через Telegram</a>
+                    <a class="header-tel link hover" href="tel:(359)0123456789">(+380) 98 123 456 78</a>
+                    <a class="header-telegram link hover" href="https://t.me/vakula_ovochi">Замовити через Telegram</a>
                 </div>
                 <div class="header-box-logo">
                     <a class="header-logo link" href="">
@@ -33,35 +33,45 @@
                     <div class="header-box-nav">
                         <nav>
                             <ul class="heder-nav-list list">
-                                <li class="header-nav-item"><a class="header-nav-link link" href="#hero">Магазин</a>
+                                <li class="header-nav-item hover"><a class="header-nav-link link"
+                                        href="#hero">Магазин</a>
                                 </li>
-                                <li class="header-nav-item"><a class="header-nav-link link" href="#about">Новинки</a>
+                                <li class="header-nav-item hover"><a class="header-nav-link link"
+                                        href="#about">Новинки</a>
                                 </li>
-                                <li class="header-nav-item"><a class="header-nav-link link" href="#services">Про нас</a>
+                                <li class="header-nav-item hover"><a class="header-nav-link link" href="#services">Про
+                                        нас</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
                 </div>
                 <div class="header-box-social">
-                    <a class="header-tel link" href="tel:(359)0123456789">Зворотній звязок</a>
-                    <a class="header-cart" href="">🛒<span class="cart-count">0</span></a>
+                    <a class="header-tel link hover" href="tel:(359)0123456789">Зворотній звязок</a>
+                    <div class="header-cart-buy">
+                        <a class="header-cart" href="">
+                            <svg class="header-cart-svg" width="34" height="34">
+                                <use href="./img/icon/shopping_buy.svg"></use>
+                            </svg>
+
+                            <span class="cart-count">0</span></a>
+                    </div>
                     <div class="header-social-box">
                         <a class="header-fb link" href="https://www.facebook.com/" target="_blank"
                             rel="noopener noreferrer" aria-label="facebook icon">
-                            <svg class="header-fb-svg" width="24" height="24">
+                            <svg class="header-fb-svg hover-svg" width="24" height="24">
                                 <use href="./img/icon/facebook-logo-icon.svg"></use>
                             </svg>
                         </a>
                         <a class="header-instagram link" href="https://www.instagram.com/" target="_blank"
                             rel="noopener noreferrer" aria-label="instagram icon">
-                            <svg class="header-instagram-svg" width="24" height="24">
+                            <svg class="header-instagram-svg hover-svg" width="24" height="24">
                                 <use href="./img/icon/instagram-logo-icon.svg"></use>
                             </svg>
                         </a>
                         <a class="header-youtube link" href="https://www.youtube.com/" target="_blank"
                             rel="noopener noreferrer" aria-label="youtube icon">
-                            <svg class="header-youtube-svg" width="24" height="24">
+                            <svg class="header-youtube-svg hover-svg" width="24" height="24">
                                 <use href="./img/icon/youtube-logo-icon.svg"></use>
                             </svg>
                         </a>
@@ -94,7 +104,7 @@
                             <ul class="filter-list list">
                                 <li class="has-dropdown is-open">
                                     <div class="dropdown-header">
-                                        <a href="/garden" class="filter-link filter-link-main">Категорія</a>
+                                        <a href="/garden" class="filter-link filter-link-main hover">Категорія</a>
                                         <button type="button" class="arrow-btn" aria-label="Відкрити підменю">
                                             <svg width="12" height="12" viewBox="0 0 10 6">
                                                 <path d="M1 1l4 4 4-4" stroke="currentColor" fill="none"
@@ -104,10 +114,10 @@
                                     </div>
 
                                     <ul class="submenu">
-                                        <li><a href="#" class="link" data-category="vegetables">Овочі</a></li>
-                                        <li><a href="#" class="link" data-category="greens">Зелень</a></li>
-                                        <li><a href="#" class="link" data-category="fruits">Фрукти</a></li>
-                                        <li><a href="#" class="link" data-category="all">Всі товари</a></li>
+                                        <li><a href="#" class="link hover" data-category="vegetables">Овочі</a></li>
+                                        <li><a href="#" class="link hover" data-category="greens">Зелень</a></li>
+                                        <li><a href="#" class="link hover" data-category="fruits">Фрукти</a></li>
+                                        <li><a href="#" class="link hover" data-category="all">Всі товари</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -197,6 +207,31 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Modal windows -->
+        <div class="modal is-hidden" id="cart-modal">
+            <button class="modal-close-btn" type="button" data-modal-close title="Закрити кошик">
+                <svg class="button-svg" width="24" height="24">
+                    <use href="./img/icon/close_icon.svg"></use>
+                </svg>
+            </button>
+
+            <div class="modal-content">
+                <h2 class="modal-title">Ваш кошик</h2>
+                <ul id="cart-items" class="list">
+                </ul>
+                <p class="total-amount">Загальна сума: <span id="total-price">0</span> грн</p>
+            </div>
+
+            <div class="modal-actions">
+                <button type="button" class="order-btn">Замовити</button>
+            </div>
+        </div>
+
+        <div class="backdrop is-hidden" id="cart-backdrop">
+
+
+        </div>
     </div>
 </body>
 
