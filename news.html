@@ -1,20 +1,15 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Від Вакули</title>
-    <!-- Сonnection Java script -->
-    <script src="./js/sidebar.js" defer></script>
-    <script src="./js/product-gallery.js" defer></script>
-    <script src="./js/search.js" defer></script>
-    <script src="./js/cart.js" defer></script>
+    <title>Новини</title>
     <!-- Fav icons -->
     <link rel="icon" type="image/png" sizes="32x32" href="./img/logo/vid_vakuly_logo_transparent.png">
     <!-- Styles css -->
+    <link rel="stylesheet" href="./css/news.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/shop.css">
 </head>
 
 <body>
@@ -81,58 +76,58 @@
                 </div>
             </div>
         </header>
-        <main>
-            <!-- Search section -->
-            <section>
-                <div class="search-box container">
-                    <h2 hidden>Пошук товарів</h2>
-                    <form class="search-form" action="/search" method="GET">
-                        <label class="visually-hidden" for="search_input">Пошук товарів</label>
-                        <input type="search" id="search_input" name="q" placeholder="Пошук товарів..." required />
-                        <button type="submit" aria-label="Знайти">
-                            <svg width="24" height="24" aria-hidden="true">
-                                <use href="./img/icon/search_icon.svg"></use>
-                            </svg>
-                        </button>
-                    </form>
-                </div>
-            </section>
-            <section class="groups">
-                <div class="container">
-                    <h2 class="groups-title" hidden>Каталог товарів</h2>
-                    <div class="groups-wrapper">
-                        <aside class="filters">
-                            <p class="filters-title">Фільтри</p>
-                            <ul class="filter-list list">
-                                <li class="has-dropdown is-open">
-                                    <div class="dropdown-header">
-                                        <a href="/garden" class="filter-link filter-link-main hover">Категорія</a>
-                                        <button type="button" class="arrow-btn" aria-label="Відкрити підменю">
-                                            <svg width="12" height="12" viewBox="0 0 10 6">
-                                                <path d="M1 1l4 4 4-4" stroke="currentColor" fill="none"
-                                                    stroke-width="2" />
-                                            </svg>
-                                        </button>
-                                    </div>
 
-                                    <ul class="submenu">
-                                        <li><a href="#" class="link hover" data-category="vegetables">Овочі</a></li>
-                                        <li><a href="#" class="link hover" data-category="greens">Зелень</a></li>
-                                        <li><a href="#" class="link hover" data-category="fruits">Фрукти</a></li>
-                                        <li><a href="#" class="link hover" data-category="all">Всі товари</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </aside>
-                        <div class="product-gallery">
-                            <ul class="product-list" id="product-container"></ul>
-                            <div class="container-load-more-btn">
-                                <button class="load-more-btn" type="button">Більше товарів</button>
+        <main>
+            <!-- News section -->
+            <section class="news-section">
+                <div class="container">
+                    <h1 class="section-title">Новини нашого господарства</h1>
+                    <p class="section-subtitle">Слідкуйте за тим, як росте ваш майбутній врожай</p>
+
+                    <div class="news-grid">
+                        <article class="news-card">
+                            <div class="news-img-wrapper">
+                                <img src="./img/news website/Збір_огірків.jpeg" alt="Збір огірків">
+                                <span class="news-date">15 Травня</span>
                             </div>
-                        </div>
+                            <div class="news-content">
+                                <h3 class="news-card-title">Почали збір першого врожаю!</h3>
+                                <p class="news-text">Наші сонячні теплиці дали перші плоди. Хрусткі огірочки сорту
+                                    "Джерело" вже
+                                    доступні до замовлення в магазині.</p>
+                                <a href="index.html" class="news-link hover">Замовити свіженьке →</a>
+                            </div>
+                        </article>
+
+                        <article class="news-card">
+                            <div class="news-img-wrapper">
+                                <img src="./img/news website/Якість_добрив.jpeg" alt="Органіка">
+                                <span class="news-date">10 Травня</span>
+                            </div>
+                            <div class="news-content">
+                                <h3 class="news-card-title">Тільки натуральне живлення</h3>
+                                <p class="news-text">Анатолій Андрійович особисто перевіряє якість добрив.
+                                    Використовуємо лише
+                                    перевірену органіку, бо "що їмо самі — те й вам".</p>
+                            </div>
+                        </article>
+
+                        <article class="news-card">
+                            <div class="news-img-wrapper">
+                                <img src="./img/news website/Нова_теплиця.jpg" alt="Нова теплиця">
+                                <span class="news-date">02 Травня</span>
+                            </div>
+                            <div class="news-content">
+                                <h3 class="news-card-title">Розширюємо горизонти</h3>
+                                <p class="news-text">Завершили будівництво ще однієї великої теплиці. Тепер солодких
+                                    томатів
+                                    вистачить усім!</p>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </section>
+
         </main>
 
         <!-- Footer section -->
@@ -211,30 +206,7 @@
             </div>
         </footer>
 
-        <!-- Modal windows -->
-        <div class="modal is-hidden" id="cart-modal">
-            <button class="modal-close-btn" type="button" data-modal-close title="Закрити кошик">
-                <svg class="button-svg" width="24" height="24">
-                    <use href="./img/icon/close_icon.svg"></use>
-                </svg>
-            </button>
-
-            <div class="modal-content">
-                <h2 class="modal-title">Ваш кошик</h2>
-                <ul id="cart-items" class="list">
-                </ul>
-                <p class="total-amount">Загальна сума: <span id="total-price">0</span> грн</p>
-            </div>
-
-            <div class="modal-actions">
-                <button type="button" class="order-btn">Замовити</button>
-            </div>
-        </div>
-
-        <div class="backdrop is-hidden" id="cart-backdrop">
-
-
-        </div>
+    </div>
     </div>
 </body>
 

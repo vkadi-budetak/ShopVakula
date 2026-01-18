@@ -1,0 +1,66 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 20px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-title {
+    font-size: 42px;
+    color: var(--primary-color);
+    /* твій основний зелений */
+    margin-bottom: 10px;
+}
+
+.about-quote {
+    margin-top: 30px;
+    padding: 20px;
+    border-left: 5px solid var(--accent-color);
+    /* помаранчевий або жовтий колір сонця */
+    background-color: #f9f9f9;
+}
+
+.slogan {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+    color: #333;
+}
+
+.farm-details {
+    margin-bottom: 78px;
+}
+
+.farm-grid {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.farm-card {
+    flex: 1;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.farm-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.farm-card h3,
+.farm-card p {
+    padding: 15px;
+}
